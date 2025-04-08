@@ -31,13 +31,13 @@
   <div class="right image">
     <p>
       Formula
-      V = (l*w*h)/3 
+      C = (F - 32) * (5/9)
     </p>
     <img src="./images/formula-for-the-volume-of-a-rectangular-pyramid.webp" alt="rectangle shape" />
   </div>
   <form>
     <p>
-      Length:
+      Fahrenheit:
     </p>
     <div class="mdl-textfield mdl-js-textfield">
       <!-- input pattern attribute -->
@@ -45,37 +45,14 @@
       <!-- mdl-textfield__label -->
       <label class="mdl-textfield__label" for="length"></label>
       <!-- class "mdl-textfield__error" -->
-      <span class="mdl-textfield__error">| Step 1</span>
+      <span class="mdl-textfield__error">| Degrees Value</span>
     </div>
-    <p>
-      Width:
-    </p>
-    <div class="mdl-textfield__input">
-      <!-- input pattern attribute  -->
-      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="width" />
-      <!-- mdl-textfield__label -->
-      <label class="mdl-textfield__label" for="width"></label>
-      <!-- class "mdl-textfield__error" -->
-      <span class="mdl-textfield__error">| Step 2</span>
-    </div>
-    <br />
-    <p>
-      Height:
-    </p>
-    <div class="mdl-textfield__input">
-      <!-- input pattern attribute  -->
-      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="height" />
-      <!-- mdl-textfield__label -->
-      <label class="mdl-textfield__label" for="height"></label>
-      <!-- class "mdl-textfield__error" -->
-      <span class="mdl-textfield__error">| Step 3</span>
-    </div>
-
+    
     <br />
     <main id="clickme" class="mdl-layout__content">
       <!-- Raised button with ripple -->
       <button id="clickme" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect"
-        onclick="calculatehoursworkedAndhourlywage()" type="button">
+        onclick="calculatefahernheittocelsius()" type="button">
         Calculate
       </button>
   </form>

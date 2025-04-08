@@ -4,7 +4,7 @@
 // Created on: April 2025
 // This file contains the JS functions for index.html
 
-function calculatehoursworkedAndhourlywage() {
+function calculatefahernheittocelsius() {
   // input
   const TaxAmount= 3 
   const FUnits = parseFloat(document.getElementById("fahrenheit").value);
